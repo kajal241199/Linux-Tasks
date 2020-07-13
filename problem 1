@@ -1,4 +1,5 @@
-Q.1Write shell script
+PROBLEM 1:
+Write shell script
 
     shebang must be /bin/bash
     make this executable
@@ -8,7 +9,8 @@ Q.1Write shell script
     if we run with anyother argument except above then it must give output "/opt/prob1.sh Hello Delvex"
     if we don't give any arguments then it must give out "/opt/prob1.sh not found"
 
-*create a shell script*:- /opt/prob1.sh
+SOLUTION:
+1.create a shell script:- /opt/prob1.sh
 vim /opt/prob1.sh
 
 [/opt/prob1.sh]
@@ -27,7 +29,7 @@ else
       echo "/opt/prob1.sh Hello Delvex"
 fi
 
-*making it executable*
+2.making it executable
 chmod +x /opt/prob1.sh
 
       
