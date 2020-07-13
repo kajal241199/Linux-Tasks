@@ -1,0 +1,33 @@
+Q.1Write shell script
+
+    shebang must be /bin/bash
+    make this executable
+    shell script name /opt/prob1.sh
+    if we run like "/opt/prob1.sh hello" it must give output "DelVex"
+    if we run like "/opt/prob1.sh delvex" it must give output "Hello"
+    if we run with anyother argument except above then it must give output "/opt/prob1.sh Hello Delvex"
+    if we don't give any arguments then it must give out "/opt/prob1.sh not found"
+
+*create a shell script*:- /opt/prob1.sh
+vim /opt/prob1.sh
+
+[/opt/prob1.sh]
+
+#!/bin/bash
+if  [  $1 == "Delvex"  ]
+then
+      echo "Hello"
+elif  [  $1 == "Hello"  ]
+then
+      echo "Delvex"
+elif  [  $1 ==   ]
+then
+      echo "/opt/prob1.sh not found"
+else
+      echo "/opt/prob1.sh Hello Delvex"
+fi
+
+*making it executable*
+chmod +x /opt/prob1.sh
+
+      
