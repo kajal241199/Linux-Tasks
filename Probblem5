@@ -1,0 +1,14 @@
+PROBLEM 5:
+
+Configure your .bashrc and .bash_profile file both
+
+    1.configure your history output so that it can give date and time of command along with command name example:- date 12 june 2020 9:30 AM
+    2.Max history size for all users will be 5000
+    3.for root user history must be stored under /opt/roothist.txt
+    4.make sure root user can run chmod command
+    5.set your terminal prompt like this : "DelVex@root:- "
+    
+SOLUTION:
+2. HISTSIZE=5000
+#write inside .bashrc file to make it  persistent
+5.PS1="DelVex@root:- "
