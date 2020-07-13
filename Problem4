@@ -1,0 +1,19 @@
+PROBLEM 4:
+Create a shell script to check and create users in linux
+
+    1.run shell script /opt/prob5.sh if user is present then it will print message "user is already present in this OS"
+    2.if user is not present then it will create that user with password
+    3.if not argument given after the script then it must send output "please pass a username"
+    4.if run /opt/prob5.sh with more than one argument then it must print "more than one user is not allowed"
+SOLUTION:
+1.creating shell script
+$ vim  /opt/prob5.sh
+
+#!/bin/bash
+
+if [ "$1" != "" ]; then
+        getent passwd $1 > /dev/null 2&>1 && (echo yes; exit 0) || (echo no; exit 2)
+else
+        echo "missing username"
+        exit -1
+fi
