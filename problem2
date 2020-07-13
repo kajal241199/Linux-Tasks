@@ -1,0 +1,19 @@
+PROBLEM 2:
+Complete this assignment
+
+    1.create 3 files a.txt b.txt c.data under /opt directory
+    2.create 2 hidden files named ok.txt and notok.txt
+    3.write command that give you list of only hidden files that you created above
+    4.run cat /etc/passwd and convert top 5 lines output into Caps letters and store output under /opt/prob3.txt
+    5.check the name of OS Name and append output in /opt/prob3.txt
+SOLUTION:
+$ cd /opt
+1.Inside opt directory
+$ touch a.txt b.txt c.txt
+2.creating hiddeen files
+$ touch .ok.txt .notok.txt
+3.giving list of only hidden files
+$ ls -d .!(|.)
+4. 
+  $cat /etc/passwd | head -n 5 | tr 'a-z' 'A-Z'  >prob3.txt
+5.cat /etc/os-release  >> prob3.txt
