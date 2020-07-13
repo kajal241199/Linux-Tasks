@@ -1,0 +1,12 @@
+PROBLEM 3:
+
+Create a command named delvex that must be similar to touch command
+
+SOLUTION:
+vim /usr/bin/Delvex
+#!/bin/bash
+/usr/bin/touch $1
+
+#making it executable
+chmod +x /usr/bin/Delvex
+  
