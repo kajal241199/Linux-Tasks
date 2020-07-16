@@ -11,4 +11,4 @@ Configure your .bashrc and .bash_profile file both
 SOLUTION:
 2. HISTSIZE=5000
 #write inside .bashrc file to make it  persistent
-5.PS1="DelVex@root:- "
+5.PS1="DelVex@root:- "         #setting terminal prompt like this
